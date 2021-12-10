@@ -320,3 +320,67 @@ Models/Draw.ts
     0.0004500265058595687	rightKnee	72.84445802839771	568.6460274263377
     0.0006650629220530391	leftAnkle	1139.2335631192032	645.3642372561492
     0.0005961144343018532	rightAnkle	1073.346472188554	678.4396661141507
+
+
+# PRODUCTION
+
+        vue-ts-detect-pose>npm run build
+
+        > detect-pose-vue-ts@1.0.0 build C:\SRC\React\TFJS\vue-ts-detect-pose
+        > vue-cli-service build
+
+
+        \  Building for production...Starting type checking and linting service...
+        Using 1 worker with 2048MB memory limit
+        -  Building for production...Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+        /  Building for production...
+
+        WARNING  Compiled with 4 warnings                                                                        6:51:31 p.m.
+
+        warning  in C:/SRC/React/TFJS/vue-ts-detect-pose/src/views/Pose.vue
+
+        WARNING in C:/SRC/React/TFJS/vue-ts-detect-pose/src/views/Pose.vue
+        31:16 missing whitespace
+            29 |           { label: 'Part', sortable: true},
+            30 |         'position.x':
+        > 31 |           {label:'X'},
+            |                ^
+            32 |         'position.y': {label: 'Y'}};
+            33 |
+            34 |     constructor() {
+
+        warning
+
+        asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+        This can impact web performance.
+        Assets:
+        js/chunk-vendors.f74dc3af.js (1.6 MiB)
+
+        warning
+
+        entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+        Entrypoints:
+        app (1.8 MiB)
+            css/chunk-vendors.48580aae.css
+            js/chunk-vendors.f74dc3af.js
+            css/app.f1a93efa.css
+            js/app.f61c8cdc.js
+
+
+        warning
+
+        webpack performance recommendations:
+        You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+        For more info visit https://webpack.js.org/guides/code-splitting/
+
+        File                                   Size              Gzipped
+
+        dist\js\chunk-vendors.f74dc3af.js      1641.42 KiB       448.19 KiB
+        dist\js\app.f61c8cdc.js                6.91 KiB          2.62 KiB
+        dist\css\chunk-vendors.48580aae.css    191.67 KiB        26.73 KiB
+        dist\css\app.f1a93efa.css              0.43 KiB          0.26 KiB
+
+        Images and other types of assets omitted.
+
+        DONE  Build complete. The dist directory is ready to be deployed.
+        INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
